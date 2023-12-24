@@ -1,0 +1,103 @@
+/* This is a user generated snippet for css. Steps--> setting icon-> user snippet-> search css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 10px 10px 40px grey,
+    -10px -10px 40px rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 550;
+}
+
+#card input{
+    padding: 10px;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+#card button{
+   margin-bottom: 40px;
+   width: 80%;
+   height: 50px;
+   font-size: 20px;
+   border: none;
+   background-color: rgb(85, 81, 207);
+   box-shadow:  5px 5px 15px grey;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#imgbox{
+    margin: 10px 0;
+    max-height: 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#imgbox img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.516);
+}
+
+.error{
+    animation: shakey 0.1s linear 10;
+    
+}
+
+@keyframes shakey {
+    0%{
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+    25%{
+        transform: translateX(-2px); 
+        border: 1px solid red;
+    }
+    50%{
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+    75%{
+        transform: translateX(2px);
+        border: 1px solid red;
+    }
+    100%{
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+}
